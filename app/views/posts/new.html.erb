@@ -1,2 +1,15 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<%= form_with scope: :posts, local: true do |form| %>
+  <p>
+    <%= form.label :caption %><br>
+    <%= form.text_field :caption %>
+  </p>
+
+  <p>
+    <%= form.label :image %><br>
+    <%= form.text_area :image %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
