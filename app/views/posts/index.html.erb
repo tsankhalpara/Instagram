@@ -1,0 +1,8 @@
+<% @posts.each do |post| %>
+  <p><%= post.caption %></p>
+  <p><%= post.image %></p>
+<% end %>
+
+<%= link_to new_post_path do %>
+  New post
+<% end %>
