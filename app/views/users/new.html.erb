@@ -4,24 +4,36 @@
 </head>
 
 <body>
+  <div class="sign-up">
   <h1>Instagram</h1>
   <p id="intro">Sign up to see photos and videos from your friends</p>
 <%= form_for @user do |form| %>
   <p>
-    <%= form.text_field :email, :placeholder => 'Email'%>
+    <%= form.text_field :email, class: 'textbox-style', :placeholder => 'Email'%>
   </p>
 
   <p>
-    <%= form.text_field :fullname, :placeholder => 'Fullname' %>
+    <%= form.text_field :fullname, class: 'textbox-style', :placeholder => 'Full Name' %>
   </p>
   <p>
-    <%= form.text_field :username, :placeholder => 'Username' %>
+    <%= form.text_field :username, class: 'textbox-style', :placeholder => 'Username' %>
   </p>
   <p>
-    <%= form.text_field :password, :placeholder => 'Password' %>
+    <%= form.text_field :password, class: 'textbox-style', :placeholder => 'Password' %>
   </p>
   <p>
-    <%= form.submit "Next" %>
+    <%= form.submit "Next", class: 'button' %>
   </p>
+  <p id='disclaimer'>By signing up, you agree to our Terms . Learn how we collect,
+    use and share your data in our Data Policy and how we use cookies and similar
+    technology in our Cookies Policy .</p>
 <% end %>
+</div>
+
+<div class="login">
+  <p>Have an account?<%= link_to users_path do %>
+    Log in
+  <% end %></p>
+
+</div>
 </body>
