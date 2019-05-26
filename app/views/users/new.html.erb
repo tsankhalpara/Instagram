@@ -1,2 +1,27 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|
+  Heebo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Instagram</h1>
+  <p id="intro">Sign up to see photos and videos from your friends</p>
+<%= form_for @user do |form| %>
+  <p>
+    <%= form.text_field :email, :placeholder => 'Email'%>
+  </p>
+
+  <p>
+    <%= form.text_field :fullname, :placeholder => 'Fullname' %>
+  </p>
+  <p>
+    <%= form.text_field :username, :placeholder => 'Username' %>
+  </p>
+  <p>
+    <%= form.text_field :password, :placeholder => 'Password' %>
+  </p>
+  <p>
+    <%= form.submit "Next" %>
+  </p>
+<% end %>
+</body>
