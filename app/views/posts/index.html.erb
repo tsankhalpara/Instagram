@@ -1,19 +1,19 @@
 <head>
-
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|
+  Heebo&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="post-display">
   <h1>Instagram</h1>
+  <br><br>
+  <%= link_to new_post_path do %>
+    New post
+  <% end %>
+  <br><br>
   <% @posts.each do |post| %>
     <p><%= image_tag post.image.url(:medium) %></p>
     <p><%= post.caption %></p>
-    <br><br>
     <p><%= link_to "delete", post, method: :delete,
       data: { confirm: "You sure?" } %>&nbsp;&nbsp;
       <%= link_to "edit", edit_post_path(post) %>
-  <% end %>
-  <br><br>
-
-  <%= link_to new_post_path do %>
-    New post
   <% end %>
 </body>

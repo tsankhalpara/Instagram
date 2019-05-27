@@ -20,14 +20,6 @@ h1 {
   padding-top: 15px;
 }
 
-img {
-  float: left;
-  width: 420px;
-  height: auto;
-  padding-top: 15px;
-  padding-left: 230px;
-}
-
 #intro {
   font-family: 'Heebo', sans-serif;
   font-weight: 550;
@@ -45,7 +37,8 @@ img {
 }
 
 .sign-up {
-  margin: 10px 250px 10px 650px;
+  float: right;
+  margin: 10px 450px 10px 450px;
   padding: 15px 30px 15px 30px;
   background-color: white;
   border: 2px solid black;
@@ -61,7 +54,7 @@ img {
 }
 
 .login-link {
-  margin: 10px 250px 10px 650px;
+  margin: 10px 450px 10px 450px;
   padding: 10px 30px 10px 30px;
   background-color: white;
   border: 2px solid black;
