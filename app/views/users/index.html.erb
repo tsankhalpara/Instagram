@@ -1,2 +1,22 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|
+  Heebo&display=swap" rel="stylesheet">
+</head>
+
+<body class="login-page">
+  <div class="login">
+  <h1>Instagram</h1>
+  <form action="/login" method="POST">
+    <input type="email" class = "textbox-style" name="login[email]" placeholder="Type your email"><br><br>
+    <input type="password" class = "textbox-style" name="login[password]" placeholder="Type your password"><br><br>
+    <input type="submit" class = "button" name="Login" value="Log In">
+  </form>
+</div>
+
+<div class="signup-link">
+  <p>Don't have an account?<%= link_to new_user_path do %>
+    Sign up
+  <% end %></p>
+
+</div>
+</body>

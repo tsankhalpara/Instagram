@@ -1,9 +1,15 @@
-body {
+.homepage {
   text-align: center;
   padding: 50px 0px 50px 0px;
   background-color: rgb(250, 250, 250);
   font-family: 'Heebo', sans-serif;
-  margin: 0px 250px 0px 250px;
+}
+
+.login-page {
+  text-align: center;
+  padding: 10px 0px 50px 0px;
+  background-color: rgb(250, 250, 250);
+  font-family: 'Heebo', sans-serif;
 }
 
 h1 {
@@ -18,8 +24,10 @@ img {
   float: left;
   width: 420px;
   height: auto;
-  padding-top: 50px;
+  padding-top: 15px;
+  padding-left: 230px;
 }
+
 #intro {
   font-family: 'Heebo', sans-serif;
   font-weight: 550;
@@ -37,7 +45,15 @@ img {
 }
 
 .sign-up {
-  margin: 10px 0px 10px 420px;
+  margin: 10px 250px 10px 650px;
+  padding: 15px 30px 15px 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-color: rgb(230, 230, 230);
+}
+
+.login {
+  margin: 10px 450px 10px 450px;
   padding: 15px 30px 15px 30px;
   background-color: white;
   border: 2px solid black;
@@ -45,7 +61,21 @@ img {
 }
 
 .login-link {
-  margin: 10px 0px 10px 420px;
+  margin: 10px 250px 10px 650px;
+  padding: 10px 30px 10px 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-color: rgb(230, 230, 230);
+  font-size: 0.9em;
+  color: rgb(37, 37, 37);
+}
+
+form {
+  padding: 30px 0px 10px 0px;
+}
+
+.signup-link {
+  margin: 10px 450px 10px 450px;
   padding: 10px 30px 10px 30px;
   background-color: white;
   border: 2px solid black;
