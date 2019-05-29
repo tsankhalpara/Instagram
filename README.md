@@ -1,24 +1,24 @@
-# README
+Instagram Challenge
+===================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Week 8 weekend challenge: build an Instagram clone using Rails. Instructions: you'll need users who can post pictures, write comments on pictures and like a picture. Style it like Instagram's website (or more awesome).
 
-Things you may want to cover:
+## Installing this app
+1. Clone this repo
+2. Run `bundle install` from the command line
+3. Run `bin/rails db:create` and then `bin/rails db:migrate` from the command line
 
-* Ruby version
+## Testing this app
+Run `bundle exec rspec` from the command line
 
-* System dependencies
+## Using this app
+Run `bin/rails server` and visit http://localhost:3000
 
-* Configuration
+## Build Status
 
-* Database creation
 
-* Database initialization
+## User Stories
 
-* How to run the test suite
+## What I learnt
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Acknowledgments
